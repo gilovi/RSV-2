@@ -115,6 +115,17 @@ X^{LMMSE}=\frac{H^{T}}{HH^{T}+\sigma^{2}I_{4}}Y
 
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+E\left[\left(X-X^{LMMSE}\right)\left(X-X^{LMMSE}\right)^{T}\right]=E\left[X-\frac{H^{T}}{HH^{T}+\sigma^{2}I_{4}}\left(HX+N\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \end_body
 \end_document
