@@ -72,9 +72,49 @@
 RSV - Matlab Ex2
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+As we saw on lecture 7 
+\begin_inset Formula 
+\[
+X^{LMMSE}=\eta_{X}+\frac{\sigma_{XY}}{\sigma_{Y}^{2}}\left(Y-\eta_{Y}\right)=\cancelto{0}{\eta_{X}}+\frac{\sigma_{X}^{2}H^{T}}{H\sigma_{x}^{2}H^{T}+\sigma_{N}^{2}}\left(Y-\cancelto{0}{H\eta_{X}}+\cancelto{0}{\eta_{N}}\right)
+\]
+
+\end_inset
+
+The covariance of 
+\begin_inset Formula $X$
+\end_inset
+
+ is 
+\begin_inset Formula $E\left[\left(X-\eta_{x}\right)\left(X-\eta_{x}\right)^{T}\right]=E\left[X^{2}\right]=\frac{1}{2}\cdot1+\frac{1}{2}\cdot1=1$
+\end_inset
+
+ so we get
+\begin_inset Formula 
+\[
+X^{LMMSE}=\frac{H^{T}}{HH^{T}+\sigma^{2}I_{4}}Y
+\]
+
+\end_inset
+
 
 \end_layout
 
+\end_deeper
 \end_body
 \end_document
