@@ -115,6 +115,57 @@ X^{LMMSE}=\frac{H^{T}}{HH^{T}+\sigma^{2}I_{4}}Y
 
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+E\left[\left(X-X^{LMMSE}\right)\left(X-X^{LMMSE}\right)^{T}\right]=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left[\left(X-\frac{H^{T}}{HH^{T}+\sigma^{2}I_{4}}\left(HX+N\right)\right)\left(X-\frac{H^{T}}{HH^{T}+\sigma^{2}I_{4}}\left(HX+N\right)\right)^{T}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=E\left[\left(X-MHX-MN\right)\left(X-MHX-MN\right)^{T}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=E\left[X^{2}-XM^{T}H^{T}X^{T}-{\color{red}XM^{T}N^{T}}-MHX^{2}+\left(MHX\right)^{2}+{\color{red}MHXM^{\text{T}}N^{T}-MNX+MHXM^{T}N^{\text{T}}}+M^{2}N^{2}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left[XX^{T}\right]-E\left[X^{LMMSE}X^{LMMSE^{T}}\right]=1-E\left[MYM^{T}Y^{T}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1-E\left[M\left(HX+N\right)M^{T}\left(HX+N\right)^{T}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \end_body
 \end_document
