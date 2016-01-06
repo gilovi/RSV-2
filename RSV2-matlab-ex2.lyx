@@ -166,6 +166,13 @@ E\left[XX^{T}\right]-E\left[X^{LMMSE}X^{LMMSE^{T}}\right]=1-E\left[MYM^{T}Y^{T}\
 
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula $E\left[XX^{T}\right]-\sigma_{xy}^{2}\sigma_{yy}^{-2}Y\cdot E\left[YX^{T}\right]-E\left[XY^{T}\right]$
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 \begin_inset ERT
