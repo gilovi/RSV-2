@@ -126,7 +126,7 @@ E\left[\left(X-X^{LMMSE}\right)\left(X-X^{LMMSE}\right)^{T}\right]=
 
 \begin_inset Formula 
 \[
-E\left[\left(X-\frac{H^{T}}{HH^{T}+\sigma^{2}I_{4}}\left(HX+N\right)\right)\left(X-\frac{H^{T}}{HH^{T}+\sigma^{2}I_{4}}\left(HX+N\right)\right)^{T}\right]
+E\left[XX^{T}\right]-\left(\sigma_{xy}^{2}\sigma_{yy}^{-2}Y\right)\cdot E\left[YX^{T}\right]-E\sigma_{x}^{2}\left[XY^{T}\right]\left(\sigma_{xy}^{2}\sigma_{YY}^{-2}\right)^{T}+\left(\sigma_{XY}^{2}\sigma_{YY}^{-2}\right)E\left[YY^{T}\right]\left(\sigma_{XY}^{2}\sigma_{YY}^{-2}\right)^{T}
 \]
 
 \end_inset
@@ -134,7 +134,7 @@ E\left[\left(X-\frac{H^{T}}{HH^{T}+\sigma^{2}I_{4}}\left(HX+N\right)\right)\left
 
 \begin_inset Formula 
 \[
-=E\left[\left(X-MHX-MN\right)\left(X-MHX-MN\right)^{T}\right]
+\sigma_{X}^{2}-\left(\sigma_{xy}^{2}\sigma_{Y}^{-2}\right)\sigma_{YX}^{2}-\cancel{\sigma_{XY}^{2}\left(\sigma_{xy}^{2}\sigma_{Y}^{-2}\right)^{T}+\sigma_{XY}^{2}\left(\sigma_{xy}^{2}\sigma_{Y}^{-2}\right)^{T}}=
 \]
 
 \end_inset
@@ -142,32 +142,9 @@ E\left[\left(X-\frac{H^{T}}{HH^{T}+\sigma^{2}I_{4}}\left(HX+N\right)\right)\left
 
 \begin_inset Formula 
 \[
-=E\left[X^{2}-XM^{T}H^{T}X^{T}-{\color{red}XM^{T}N^{T}}-MHX^{2}+\left(MHX\right)^{2}+{\color{red}MHXM^{\text{T}}N^{T}-MNX+MHXM^{T}N^{\text{T}}}+M^{2}N^{2}\right]
+\sigma_{X}^{2}-\left(\sigma_{xy}^{2}\sigma_{Y}^{-2}\right)\sigma_{YX}^{2}=1-H^{T}\left(HH^{T}+\sigma^{2}\right)^{-1}H
 \]
 
-\end_inset
-
-
-\begin_inset Formula 
-\[
-E\left[XX^{T}\right]-E\left[X^{LMMSE}X^{LMMSE^{T}}\right]=1-E\left[MYM^{T}Y^{T}\right]
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-1-E\left[M\left(HX+N\right)M^{T}\left(HX+N\right)^{T}\right]
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $E\left[XX^{T}\right]-\sigma_{xy}^{2}\sigma_{yy}^{-2}Y\cdot E\left[YX^{T}\right]-E\left[XY^{T}\right]$
 \end_inset
 
 
